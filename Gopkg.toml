@@ -34,5 +34,5 @@
   version = "1.9.1"
 
 [[constraint]]
-  name = "github.com/oxequa/realize"
-  version = "2.0.2"
+  branch = "master"
+  name = "github.com/markbates/grift"
