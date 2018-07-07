@@ -2,10 +2,26 @@
 
 
 [[projects]]
+  name = "github.com/go-sql-driver/mysql"
+  packages = ["."]
+  revision = "d523deb1b23d913de5bdada721a6071e71283618"
+  version = "v1.4.0"
+
+[[projects]]
   name = "github.com/jinzhu/gorm"
-  packages = ["dialects/sqlite"]
+  packages = [
+    ".",
+    "dialects/mysql",
+    "dialects/sqlite"
+  ]
   revision = "6ed508ec6a4ecb3531899a69cbc746ccf65a4166"
   version = "v1.9.1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/jinzhu/inflection"
+  packages = ["."]
+  revision = "04140366298a54a039076d798123ffa108fff46c"
 
 [[projects]]
   name = "github.com/labstack/echo"
@@ -25,11 +41,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/markbates/grift"
-  packages = [
-    ".",
-    "cmd",
-    "grift"
-  ]
+  packages = ["grift"]
   revision = "76f93617a788d350124f749acb3790276a436cc0"
 
 [[projects]]
@@ -49,12 +61,6 @@
   packages = ["."]
   revision = "6c771bb9887719704b210e87e934f08be014bdb1"
   version = "v1.6.0"
-
-[[projects]]
-  name = "github.com/pkg/errors"
-  packages = ["."]
-  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
-  version = "v0.8.0"
 
 [[projects]]
   branch = "master"
@@ -83,9 +89,15 @@
   packages = ["unix"]
   revision = "bb9c189858d91f42db229b04d45a4c3d23a7662a"
 
+[[projects]]
+  name = "google.golang.org/appengine"
+  packages = ["cloudsql"]
+  revision = "b1f26356af11148e710935ed1ac8a7f5702c7612"
+  version = "v1.1.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "73905be747449bfa305343d05cff68a1847e56abc7dda7d91714264ae145804f"
+  inputs-digest = "7e52ac18b29f9a7b2968178e764d0e00eedbab779570a38d44b093c19451aeda"
   solver-name = "gps-cdcl"
   solver-version = 1

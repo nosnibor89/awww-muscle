@@ -6,6 +6,7 @@ import "github.com/markbates/grift/grift"
 type TaskConfig struct {
 	Name string
 	Description string
+	Namespace string
 	Task func(c *grift.Context) error
 }
 
