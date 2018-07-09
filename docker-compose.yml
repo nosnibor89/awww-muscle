@@ -2,24 +2,24 @@ version: "3.0"
 
 services:
 
-   api:
-     container_name: api
-     image: golang:1.10
-     restart: always
-     working_dir: /var/www/api
-     entrypoint: go run server.go
-     ports:
-       - "1337:1337"
-     volumes:
-       - ../:/var/www/api
-    depends_on:
-      - db
+#   api:
+#     container_name: api
+#     image: golang:1.10
+#     restart: always
+#     working_dir: /var/www/api
+#     entrypoint: go run server.go
+#     ports:
+#       - "1337:1337"
+#     volumes:
+#       - ../:/var/www/api
+#    depends_on:
+#      - db
   db:
     container_name: mysql
     image: mysql
     environment:
       - "MYSQL_URL=mysql://mysql:3306"
-      - "MYSQL_ROOT_PASSWORD=3squ3l3t0"
-      - "MYSQL_DATABASE=atlas"
+      - "MYSQL_ROOT_PASSWORD=awwmuscle"
+      - "MYSQL_DATABASE=awwmuscle"
     ports:
       - 3306:3306
